@@ -52,6 +52,14 @@ services:
           name: n8n-db
           property: user
 
+      # 🔐 Basic Auth credentials
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: zero
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: I12eatrice,.
+
 databases:
   - name: n8n-db
     plan: free
